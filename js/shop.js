@@ -21,7 +21,7 @@
 var customername = "Ratana";
 // var price = 10;
 // var quantity = 3;
-var totalprice = 0 ;
+var totalPrice = 0 ;
 
 
 var products = [
@@ -33,11 +33,11 @@ var productsElement = document.getElementById("product-list");
 
 for(var i = 0; i< products.length; i++){
 	productstext = productstext +"<li class ='list-group-item'>" +products[i] + "<span class='badge'>$"+price[i] +"</li>";
-	totalprice = totalprice + price[i];
+	totalPrice = totalPrice + price[i];
 }
 
 document.getElementById("customer-name").innerHTML ="Ratana";
-document.getElementById("price").innerHTML ="$" +(totalprice-(totalprice*0.25));
+document.getElementById("price").innerHTML ="$" +(totalPrice-(totalPrice*0.25));
 productsElement.innerHTML=productstext;
 
 var hour=new Date().getHours();
